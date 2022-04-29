@@ -1,0 +1,7 @@
+﻿  test7.c
+D:\vs pratice C\train7\train7\test7.c(32,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\vs pratice C\train7\train7\test7.c(32,9): message : 请考虑在格式字符串中使用“%zd”
+D:\vs pratice C\train7\train7\test7.c(33,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\vs pratice C\train7\train7\test7.c(33,9): message : 请考虑在格式字符串中使用“%zd”
+D:\vs pratice C\train7\train7\test7.c(36,2): warning C4098: “main”:“void”函数返回值
+  train7.vcxproj -> D:\vs pratice C\train7\x64\Debug\train7.exe

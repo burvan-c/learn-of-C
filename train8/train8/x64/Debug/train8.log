@@ -1,0 +1,3 @@
+﻿  test8.c
+D:\vs pratice C\train8\train8\test8.c(45,2): warning C4098: “main”:“void”函数返回值
+  train8.vcxproj -> D:\vs pratice C\train8\x64\Debug\train8.exe

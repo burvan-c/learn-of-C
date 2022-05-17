@@ -59,13 +59,43 @@ int main()
 	//printf("%d\n", sum);
 
 	//改进
-	int n=0, a=1;           
+	/*int n=0, a=1;           
 	 	int i = 0, sum = 0;
 	for (n = 1; n <= 10; n++)
 	{ 
 		a *= n;
 		sum += a;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", sum);*/
+
+
+	//在有序数组中查找某个数字n
+	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+	int k = 7;//要查找的数字
+	//在arr数组中查找k的值
+	int sz = sizeof(arr) / sizeof(arr[0]);//数组元素个数
+	int left = 0, right = sz-1;
+	while (left<=right)
+	{
+		int mid = (left + right) / 2;
+		if (arr[mid] < k)
+		{
+			left = mid + 1;
+		}
+		else if (arr[mid] > k)
+		{
+			right = mid - 1;
+		}
+		else
+		{
+			printf("找到了,下标是:%d\n", mid);
+			break;//跳出整个循环
+		}
+		if (left > right)
+		{
+			printf("找不到\n");//若k=17则找不到
+		}
+	}
+	
 	return 0;
 }

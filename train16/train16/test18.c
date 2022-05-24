@@ -1,51 +1,51 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-#include<string.h>
-#include<windows.h>
-#include<stdlib.h>
-#include<time.h>
+//#include<stdio.h>
+//#include<string.h>
+//#include<windows.h>
+//#include<stdlib.h>
+//#include<time.h>
 
-void menu()
-{
-	printf("*******************\n");
-	printf("*******1.play******\n");
-	printf("*******0.exit******\n");
-	printf("*******************\n");
-}
+//void menu()
+//{
+//	printf("*******************\n");
+//	printf("*******1.play******\n");
+//	printf("*******0.exit******\n");
+//	printf("*******************\n");
+//}
 
-void game()
-{
+//void game()
+//{
 	//猜数字游戏的实现
 	//1.生产随机数
 	//rand函数返回了一个0---32767之间的数字
 	//时间--时间戳
 	//srand((unsigned int)time(NULL));
-	int ret=rand()%100+1;//%100d的余数是0--99，再加1，范围就是1--100
+	/*int ret=rand()%100+1;*///%100d的余数是0--99，再加1，范围就是1--100
 	//printf("%d\n", ret);
 	//2.猜数字
-	int guess = 0;
-	while (1)
-	{
-		printf("请猜数字:>");
-		scanf("%d", &guess);
-		if (guess < ret)
-		{
-			printf("猜小了\n");
-		}
-		else if(guess>ret)
-		{
-			printf("猜大了\n");
-		}
-		else
-		{
-			printf("猜对了\n");
-			break;//跳出while循环
-		}
-	}
-}
+//	int guess = 0;
+//	while (1)
+//	{
+//		printf("请猜数字:>");
+//		scanf("%d", &guess);
+//		if (guess < ret)
+//		{
+//			printf("猜小了\n");
+//		}
+//		else if(guess>ret)
+//		{
+//			printf("猜大了\n");
+//		}
+//		else
+//		{
+//			printf("猜对了\n");
+//			break;//跳出while循环
+//		}
+//	}
+//}
 
-int main()
-{
+//int main()
+//{
 	//编写代码，多个字符从两端向中间移动
 
 	//char arr1[] = "Annual salary of millions";
@@ -102,28 +102,28 @@ int main()
 	//写一个猜数字游戏
 	//自动产生一个1-100的随机数；猜数字；猜对了游戏结束，猜错了会提醒大小后继续猜直到猜对。
 	//游戏可以一直玩，除非退出游戏
-	int input = 0;
-	srand((unsigned int)time(NULL));
-	do
-	{
-		menu();//打印菜单
-		printf("请选择>:");
-		scanf("%d", &input);
-		switch (input)
-		{
-		case 1:
-			game();
-				break;
-		case 0:
-			printf("退出游戏\n");
-			break;
-		default:
-			printf("选择错误,重新选择\n");
-			break;//这里break是跳出switch
-		}
-
-	} while (input);//input为真继续循环，为假跳出循环
-
-	
-	return 0;
-}
+	//int input = 0;
+//	srand((unsigned int)time(NULL));
+//	do
+//	{
+//		menu();//打印菜单
+//		printf("请选择>:");
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			game();
+//				break;
+//		case 0:
+//			printf("退出游戏\n");
+//			break;
+//		default:
+//			printf("选择错误,重新选择\n");
+//			break;//这里break是跳出switch
+//		}
+//
+//	} while (input);//input为真继续循环，为假跳出循环
+//
+//	
+//	return 0;
+//}

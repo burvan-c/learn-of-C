@@ -27,5 +27,8 @@
     <ClCompile Include="test19.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="test20.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -140,12 +140,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="add.c" />
+    <ClCompile Include="sub.c" />
     <ClCompile Include="test16.c" />
     <ClCompile Include="test17.c" />
     <ClCompile Include="test18.c" />
     <ClCompile Include="test19.c" />
     <ClCompile Include="test20.c" />
     <ClCompile Include="test21.c" />
+    <ClCompile Include="test22.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="add.h" />
+    <ClInclude Include="sub.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

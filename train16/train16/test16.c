@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+//#define _CRT_SECURE_NO_WARNINGS 1
 //#include<stdio.h>
 //     for(表达式1；表达式2；表达式3）  初始化  判断  调整
 //          循环语句

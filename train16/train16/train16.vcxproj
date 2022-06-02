@@ -149,6 +149,7 @@
     <ClCompile Include="test20.c" />
     <ClCompile Include="test21.c" />
     <ClCompile Include="test22.c" />
+    <ClCompile Include="test23.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="add.h" />

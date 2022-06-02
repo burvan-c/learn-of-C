@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-#include<string.h>
+//#include<stdio.h>
+//#include<string.h>
 
 
 //传址调用
@@ -87,15 +87,15 @@
 
 //函数声明一般放在头文件中：创建 add.h   add.c   sub.h sub.c 几个文件
 //函数的定义一般放在对应的.c文件中
-#include"add.h"//这里引用别人的文件用双引号
-#include"sub.h"
-int main()
-{
-	int a = 10, b = 20;
-	int c = add(a, b),d=sub(a,b);
-	printf("%d\n%d\n", c,d);
-	return 0;
-}
+//#include"add.h"//这里引用别人的文件用双引号
+//#include"sub.h"
+//int main()
+//{
+//	int a = 10, b = 20;
+//	int c = add(a, b),d=sub(a,b);
+//	printf("%d\n%d\n", c,d);
+//	return 0;
+//}
 //头文件和源文件中的文件可以先移除（不是删除）然后通过添加现有文件再添加回来
 
 

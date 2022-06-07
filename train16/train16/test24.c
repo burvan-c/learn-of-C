@@ -151,3 +151,45 @@
 
 
 
+//计算一个数的每位之和（递归实现)
+//#include<stdio.h>
+//int digitsum(int n)
+//{
+//	if (n > 9)
+//	{
+//		return digitsum(n / 10) + n % 10;
+//	}
+//	else
+//	{
+//		return n;
+//	}
+//}
+//int main()
+//{
+//	int num = 1729;
+//	int	sum = digitsum(num);
+//	printf("%d\n", sum);
+//	return 0;
+//}
+
+
+
+//递归实现n的k次方
+//#include<stdio.h>
+//double mi(int n, int k)
+//{
+//	if (0 == k)
+//		return 1.0;
+//	else if (k > 0)
+//		return n * mi(n, k - 1);
+//	else
+//		return 1.0 / (mi(n, -k));
+//}
+//int main()
+//{
+//	int n = 0, k = 0;
+//	scanf("%d\n%d", &n,&k);
+//	double ret = mi(n, k);
+//	printf("%lf\n", ret);
+//	return 0;
+//}

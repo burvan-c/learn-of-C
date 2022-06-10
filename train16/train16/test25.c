@@ -120,6 +120,7 @@
 //	{
 //		//Ò»ÌËÅÅĞò¹ı³Ì
 //		int j = 0;
+//		int flag=1;
 //		for (j = 0; j <sz-i-1 ; j++)
 //		{
 //			if (arr[j] > arr[j + 1])
@@ -127,8 +128,12 @@
 //				int tmp = arr[j];
 //				arr[j] = arr[j + 1];
 //				arr[j + 1] = tmp;
-//				
+//				flag = 0;
 //			}
+//		}
+//		if (1 == flag)
+//		{
+//			break;
 //		}
 //	}
 //}

@@ -107,6 +107,7 @@
 
 
 //数组作为函数参数
+// 1.数组形式  2.指针形式    本质上就是地址
 //#include<stdio.h>
 //void bubble_sort(int arr[],int sz)//形参arr的本质是指针
 //{

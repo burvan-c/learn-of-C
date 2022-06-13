@@ -51,10 +51,16 @@
     <ClCompile Include="test25.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="test26.c">
+    <ClCompile Include="test26_game.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="game1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test27_game.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="game2.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -66,6 +72,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="game1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="game2.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

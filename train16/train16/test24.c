@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+//#define _CRT_SECURE_NO_WARNINGS 1
 //编写程序数一下1--100的所有整数中出现多少个数字9
 //#include<stdio.h>
 //int main()

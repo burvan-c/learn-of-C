@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+//#define _CRT_SECURE_NO_WARNINGS 1
 //函数递归：调用自身编程技巧
 //#include<stdio.h>
 //int main()

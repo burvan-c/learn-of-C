@@ -15,67 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test16.c">
+    <None Include="test28.c">
       <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test17.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test18.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test19.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test20.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test21.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test22.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="add.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="sub.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test23.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test24.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test25.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test26_game.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="game1.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test27_game.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="game2.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="add.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="sub.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="game1.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="game2.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    </None>
   </ItemGroup>
 </Project>

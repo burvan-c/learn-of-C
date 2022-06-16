@@ -99,16 +99,31 @@
 
 int main()
 {
-	int arr[10] = {0};
-	//sizeof--操作符，不是函数
-	printf("%d\n", sizeof(arr));//计算数组大小
-	printf("%d\n", sizeof(int [10]));//计算arr类型大小
+	//int arr[10] = {0};
+	////sizeof--操作符，不是函数
+	//printf("%d\n", sizeof(arr));//计算数组大小
+	//printf("%d\n", sizeof(int [10]));//计算arr类型大小
 
 
 
-	short s = 5;//short占2个字节
-	int b = 10;//int占4个字节
-	printf("%d\n", sizeof(s = b + 2));//s的是short类型，这里没有强制类型转化
-	printf("%d\n", s);   //sizeof（）中的表达式不参与运算*********************************
+	//short s = 5;//short占2个字节
+	//int b = 10;//int占4个字节
+	//printf("%d\n", sizeof(s = b + 2));//s的是short类型，这里没有强制类型转化
+	//printf("%d\n", s);   //sizeof（）中的表达式不参与运算*********************************
+	
+
+
+	/*int a = -1;
+	int b = ~a;
+	printf("%d\n", b);*/
+
+
+	int a = 10;
+	int b = a++;//后置++，先使用，后++
+	int c = ++a;//前置++，先++，后使用
+	printf("%d\n%d\n%d\n", a, b, c);
+
+	printf("%d\n", a--);
+	printf("%d\n", a);
 	return 0;
 }

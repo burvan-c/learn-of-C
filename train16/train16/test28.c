@@ -96,9 +96,9 @@
 //		* --解应用操作符
 //		（类型） --强制类型转换
 
-
-int main()
-{
+//
+//int main()
+//{
 	//int arr[10] = {0};
 	////sizeof--操作符，不是函数
 	//printf("%d\n", sizeof(arr));//计算数组大小
@@ -118,12 +118,84 @@ int main()
 	printf("%d\n", b);*/
 
 
-	int a = 10;
-	int b = a++;//后置++，先使用，后++
-	int c = ++a;//前置++，先++，后使用
-	printf("%d\n%d\n%d\n", a, b, c);
+	//int a = 10;
+	//int b = a++;//后置++，先使用，后++
+	//int c = ++a;//前置++，先++，后使用
+	//printf("%d\n%d\n%d\n", a, b, c);
+	//printf("%d\n", a--);
+	//printf("%d\n", a);
 
-	printf("%d\n", a--);
-	printf("%d\n", a);
+
+
+	//int a = 10;
+	//printf("%p\n", &a);
+	//int *pa = &a;//pa用来存放地址--指针变量
+	//*pa = 20;//*--解引用操作符--间接访问操作符
+
+
+	//int a = (int) 3.14;//强制类型转换
+	//printf("%d\n", a);
+
+
+
+	//int i = 0, a = 0, b = 2, c = 3, d = 4; 
+	//i = a++ && ++b && d++;//逻辑运算与：第一个为假，后面就没必要再运算了（一假为假）
+	////i=a++||++b||d++;//逻辑运算或：b为真，b后面的就不用运算了（一真为真）
+	//printf("%d\n%d\n%d\n%d\n", a, b, c, d);
+
+
+
+	//条件操作符--三目操作符
+	/*int a = 3, b = 0;
+	b = (a > 5 ? 1 : -1);*/
+
+
+
+	////逗号表达式
+	//int a = 3, b = 5,c = 0;
+	////逗号表达式从左向右依次计算，整个表达式的结果是最后一个表达式的结果
+	//int d = (c = 5, a = c + 3, b = a - 4, c += 5);
+
+
+
+
+
+	//下标引用操作符
+	//int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	//printf("%d\n", arr[4]);//[]--下标引用操作符
+	//[]的操作数是2个：arr,4 
+	//	return 0;
+	//}
+
+
+
+
+//函数调用操作符
+//int add(int x, int y)
+//{
+//	return x + y;
+//}
+//int main()
+//{
+//	int a = 10, b = 20;
+//	//函数调用
+//	int ret = add(a, b);//()---函数调用操作符
+//	return 0;
+//}
+
+
+
+
+//结构成员访问操作符
+struct book//结构体必须有分号
+{
+	char name[20];
+	char id[20];
+	int price;
+};
+int main()
+{
+	struct book b = { "c语言","c20220620",55 };
+	printf("书名:%s\n书号:%s\n价格:%d\n", b.name,b.id,b.price);
 	return 0;
 }

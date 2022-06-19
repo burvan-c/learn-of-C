@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
 
 
 
@@ -186,16 +186,3 @@
 
 
 
-//结构成员访问操作符
-struct book//结构体必须有分号
-{
-	char name[20];
-	char id[20];
-	int price;
-};
-int main()
-{
-	struct book b = { "c语言","c20220620",55 };
-	printf("书名:%s\n书号:%s\n价格:%d\n", b.name,b.id,b.price);
-	return 0;
-}

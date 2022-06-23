@@ -1,2 +1,3 @@
-﻿  test29.c
+﻿  test30.c
+D:\vs pratice C\learn-of-C\train17\train17\test30.c(137,13): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
   train17.vcxproj -> D:\vs pratice C\learn-of-C\train17\x64\Debug\train17.exe

@@ -142,3 +142,65 @@
 //	printf("%d\n", len);
 //	return 0;
 //}
+
+
+//指针与数组
+//int main()
+//{
+//	int arr[10] = { 0 };
+	//printf("%p\n", arr);//数组名是数组首元素地址
+	//printf("%p", &arr[0]);
+
+
+//	int* p = arr;
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%p<==>%p\n", &arr[i], p + i);
+//	}
+//
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int* p = arr;
+//	//arr[2]<==>*(p+2)<==>*(2+arr)==2[arr]
+//	printf("%d\n", 2[arr]);
+//	//[]是操作符，2与arr是操作数
+//	printf("%d\n", 2[p]);
+//	return 0;
+//}
+
+
+
+
+
+
+//二级指针
+//int main()
+//{
+//	int a = 10;
+//	int* pa = &a;//一级指针.pa为指针变量
+//	int** ppa = &pa;//pa是变量，&pa取出pa在内存中的起始地址
+//	//ppa为二级指针
+//	//*ppa==pa    *pa==a==**ppa
+//	return 0;
+//}
+
+
+
+
+
+//指针数组---本质为数组
+//int main()
+//{
+//	int arr[10];//整型数组
+//	char ch[5];//字符数组
+//
+//	int* parr[5];//整形指针的数组
+//	char* pch[5];//字符指针的数组
+//	return 0;
+//}

@@ -1,6 +1,6 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-#include<assert.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
+//#include<assert.h>
 
 //结构体初阶
 //数组--相同类型元素集合

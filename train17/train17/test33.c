@@ -64,11 +64,34 @@
 
 
 
-
+//单词倒置，标点不倒置
+void reverse(char* left, char* right)
+{
+	while (left < right)
+	{
+		char tmp = 0;
+		tmp = *left;
+		*left = *right;
+		*right = tmp;
+		left++;
+		right--;
+	}
+}
 int main()
 {
 	char arr[100] = { 0 };
-	scanf("%s", arr);
+	//scanf("%s", arr);//scanf读取字符串遇到空格时默认结束
+	gets(arr);
+	//三步翻转法
+	//1.字符串整体翻转 2.每个单词逆序
+	int len = strlen(arr);
+	reverse(arr, arr + len - 1);
+
+	char* start = arr;
+	while (*start)
+	{
+
+	}
 	return 0;
 }
 

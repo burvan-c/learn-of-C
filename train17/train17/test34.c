@@ -140,13 +140,29 @@
 
 int main()
 {
-	int n = 9;
+	int n = 9;    //4byte
 	float* pfloat = (float*)&n;
 	printf("%d\n", n);
-	printf("%f\n", *pfloat);
+	printf("%f\n", *pfloat);//4byte,以浮点数视角去看
 
 	*pfloat = 9.0;
 	printf("%d\n", n);
 	printf("%f\n", *pfloat);
+	return 0;
+}
+
+
+
+
+//任一二进制浮点数V可表示为（-1）^S*M*2^E
+//(-1)^S表示符号位；S=0，V为正数；S=1，V为负数
+//M表示有效数字，大于等于1，小于2
+//2^E表示指数位
+
+//5.5的二进制为101.1->1.011*2^2->(-1)^0*1.011*2^2
+int main()
+{
+	float f = 5.5f;
+
 	return 0;
 }

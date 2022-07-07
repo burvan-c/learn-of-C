@@ -116,3 +116,72 @@
 
 
 //打印菱形
+//int main()
+//{
+//	int line = 0;
+//	scanf("%d", &line);
+//	int i = 0;
+//	//上
+//	for (i = 0; i < line; i++)
+//	{
+//		//打印空格
+//		int j = 0;
+//		for (j = 0; j < line - 1 - i; j++)
+//		{
+//			printf(" ");
+//		}
+//		//打印*
+//		for (j = 0;j < 2 * i - 1;j++)
+//		{
+//			printf("*");
+//		}
+//		//换行
+//		printf("\n");
+//	}
+//
+//	//下
+//	for (i = 0; i < line - 1; i++)
+//	{
+//		//打印空格
+//		int j = 0;
+//		for (j = 0; j <+i ; j++)
+//		{
+//			printf(" ");
+//		}
+//		//打印*
+//		for (j = 0; j <2*(line-1-i); j++)
+//		{
+//			printf("*");
+//		}
+//		//换行
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+
+
+//喝汽水，一瓶汽水一块钱，2个空瓶可换一瓶汽水，给20元，可以多少汽水（编程）
+//int main()
+//{
+//	int money = 0;
+//	int total = 0;
+//	scanf("%d", &money);
+//	if (money > 0)
+//	{
+//	 total = 2 * money - 1;
+//	}
+//
+//	//int total = money;
+//	//int empty = money;
+//	////置换
+//	//while (empty >= 2)
+//	//{
+//	//	total += empty / 2;
+//	//	empty = empty / 2 + empty % 2;
+//
+//	//}
+//
+//	printf("%d\n", total);
+//	return 0;
+//}

@@ -1,6 +1,6 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-#include<math.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
+//#include<math.h>
 
 //int i;//全局变量，不初始化，默认为0
 //int main()
@@ -183,5 +183,54 @@
 //	//}
 //
 //	printf("%d\n", total);
+//	return 0;
+//}
+
+
+
+
+
+
+//调整数组，使奇数全部位于偶数前面
+//void move(int arr[], int sz)
+//{
+//	int left = 0;
+//	int right = sz - 1;
+//	while (left < right)
+//	{
+//		//从前往后找偶数
+//		while ((left<right)&&(arr[left] % 2 == 1))
+//		{
+//			left++;
+//		}
+//		//从后往前找奇数
+//		while ((left<right)&&(arr[right] % 2 == 0))
+//		{
+//			right--;
+//		}
+//		//各自找到,判断，交换
+//		if (left < right)
+//		{
+//			int tmp = arr[left];
+//			arr[left] = arr[right];
+//			arr[right] = tmp;
+//		}
+//	}
+//}
+//void print(int arr[], int sz)
+//{
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	printf("\n");
+//}
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	move(arr, sz);
+//	print(arr, sz);
 //	return 0;
 //}

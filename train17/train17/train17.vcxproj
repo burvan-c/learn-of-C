@@ -148,6 +148,7 @@
     <ClCompile Include="test35.c" />
     <ClCompile Include="test36.c" />
     <ClCompile Include="test37.c" />
+    <ClCompile Include="test38.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

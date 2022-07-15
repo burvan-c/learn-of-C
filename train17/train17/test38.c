@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
 
 
 
@@ -123,30 +123,30 @@
 
 //函数指针数组--存放函数指针的数组
 //整形指针int*     整形指针数组int* arr[4]
-int Add(int x, int y)
-{
-	return x + y;
-}
-int Sub(int x, int y)
-{
-	return x - y;
-}
-int Mul(int x, int y)
-{
-	return x * y;
-}
-int Div(int x, int y)
-{
-	return x / y;
-}
-void menu()
-{
-	printf("1.add    2.sub\n");
-	printf("1.add    2.sub\n");
-	printf("    0.exit     \n");
-}
-int main()
-{
+//int Add(int x, int y)
+//{
+//	return x + y;
+//}
+//int Sub(int x, int y)
+//{
+//	return x - y;
+//}
+//int Mul(int x, int y)
+//{
+//	return x * y;
+//}
+//int Div(int x, int y)
+//{
+//	return x / y;
+//}
+//void menu()
+//{
+//	printf("1.add    2.sub\n");
+//	printf("3.mul    4.div\n");
+//	printf("    0.exit     \n");
+//}
+//int main()
+//{
 	//int(*pf1)(int, int) = Add;//函数名相当于函数地址
 	//int(*pf2)(int, int) = Sub;//函数名相当于函数地址
 	//int(*pfarr[2])(int, int) = {pf1,Sub};
@@ -155,50 +155,50 @@ int main()
 
 
 	//计算器--加、减、乘、除
-	int input = 0;
-	do
-	{
-		menu();
-		
-		int x = 0, y = 0, ret = 0;
-		printf("请选择:>");
-		scanf("%d", &input);
-
-		switch (input)
-		{
-		case 1:
-			printf("请输入两个操作数:>");
-			scanf("%d %d", &x, &y);
-			ret = Add(x, y);
-			printf("ret=%d\n");
-			break;
-		case 2:
-			printf("请输入两个操作数:>");
-			scanf("%d %d", &x, &y);
-			ret = Sub(x, y);
-			printf("ret=%d\n");
-			break;
-		case 3:
-			printf("请输入两个操作数:>");
-			scanf("%d %d", &x, &y);
-			ret = Mul(x, y);
-			printf("ret=%d\n");
-			break;
-		case 4:
-			printf("请输入两个操作数:>");
-			scanf("%d %d", &x, &y);
-			ret = Div(x, y);
-			printf("ret=%d\n");
-			break;
-		case 0:
-			printf("退出程序\n");
-			break;
-		default:
-			printf("选择错误，重新选择\n");
-			break;
-		}
-		
-	} while (input);
-
-	return 0;
-}
+//	int input = 0;
+//	do
+//	{
+//		menu();
+//		
+//		int x = 0, y = 0, ret = 0;
+//		printf("请选择:>");
+//		scanf("%d", &input);
+//
+//		switch (input)
+//		{
+//		case 1:
+//			printf("请输入两个操作数:>");
+//			scanf("%d %d", &x, &y);
+//			ret = Add(x, y);
+//			printf("ret=%d\n",ret);
+//			break;
+//		case 2:
+//			printf("请输入两个操作数:>");
+//			scanf("%d %d", &x, &y);
+//			ret = Sub(x, y);
+//			printf("ret=%d\n",ret);
+//			break;
+//		case 3:
+//			printf("请输入两个操作数:>");
+//			scanf("%d %d", &x, &y);
+//			ret = Mul(x, y);
+//			printf("ret=%d\n",ret);
+//			break;
+//		case 4:
+//			printf("请输入两个操作数:>");
+//			scanf("%d %d", &x, &y);
+//			ret = Div(x, y);
+//			printf("ret=%d\n",ret);
+//			break;
+//		case 0:
+//			printf("退出程序\n");
+//			break;
+//		default:
+//			printf("选择错误，重新选择\n");
+//			break;
+//		}
+//		
+//	} while (input);
+//
+//	return 0;
+//}

@@ -1,14 +1,2 @@
-﻿  test38.c
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(173,11): warning C4473: “printf”: 没有为格式字符串传递足够的参数
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(173,11): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(173,11): message : 缺失的可变参数 1 为格式字符串“%d”所需
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(179,11): warning C4473: “printf”: 没有为格式字符串传递足够的参数
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(179,11): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(179,11): message : 缺失的可变参数 1 为格式字符串“%d”所需
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(185,11): warning C4473: “printf”: 没有为格式字符串传递足够的参数
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(185,11): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(185,11): message : 缺失的可变参数 1 为格式字符串“%d”所需
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(191,11): warning C4473: “printf”: 没有为格式字符串传递足够的参数
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(191,11): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
-D:\vs pratice C\learn-of-C\train17\train17\test38.c(191,11): message : 缺失的可变参数 1 为格式字符串“%d”所需
+﻿  test39.c
   train17.vcxproj -> D:\vs pratice C\learn-of-C\train17\x64\Debug\train17.exe

@@ -63,7 +63,7 @@ int main()
 
 
 
-	char* p = "abcdef";//'\0'
+	//char* p = "abcdef";//'\0'
 	//printf("%d\n", sizeof(p));// 一个指针（地址）大小--8个字节
 	//printf("%d\n", sizeof(p+1));//（b)一个指针（地址）大小--8个字节 
 	//printf("%d\n", sizeof(*p));// *p<==>a,一个字符大小--1个字节  
@@ -73,12 +73,69 @@ int main()
 	//printf("%d\n", sizeof(&p[0]+1));// 一个指针（地址）大小--8个字节  
 
 
-	printf("%d\n", strlen(p));//含6个字符--6
-	printf("%d\n", strlen(p + 1));// 从b开始--5
-	//printf("%d\n", strlen(*p));// err 
-	//printf("%d\n", strlen(p[0]));//  err
-	printf("%d\n", strlen(&p));//同p,含6个字符--6
-	printf("%d\n", strlen(&p + 1));//跳过字符串，随机值
-	printf("%d\n", strlen(&p[0] + 1));//从b开始--5   
+	//printf("%d\n", strlen(p));//含6个字符--6
+	//printf("%d\n", strlen(p + 1));// 从b开始--5
+	////printf("%d\n", strlen(*p));// err 
+	////printf("%d\n", strlen(p[0]));//  err
+	//printf("%d\n", strlen(&p));//同p,含6个字符--6
+	//printf("%d\n", strlen(&p + 1));//跳过字符串，随机值
+	//printf("%d\n", strlen(&p[0] + 1));//从b开始--5 
+
+
+
+
+	//二维数组
+	//int a[3][4] = { 0 };
+	//printf("%d\n", sizeof(a));//12个整形元素大小--4x12=48字节
+
+	//printf("%d\n", sizeof(a[0][0]));//第一行第一列的整形元素大小--4字节
+
+	//printf("%d\n", sizeof(a[0]));//a[0]单独使用，第一行四个整形元素大小--16字节
+
+	//printf("%d\n", sizeof(a[0]+1));
+	////a[0]没有单独使用，a[0]为第一个元素地址，a[0]+1第一行第二个元素地址大小--8字节
+
+	//printf("%d\n", sizeof(*(a[0]+1)));
+	////未单独使用，a[0]第一个元素地址，a[0]+1第一行第二个元素地址，解引用元素大小--4字节
+
+	//printf("%d\n", sizeof(a+1));
+	////a没有单独放在sizeof内，a代表首元素地址（第一行地址），a+1第二行地址，大小--8字节
+
+	//printf("%d\n", sizeof(*(a+1)));
+	////a+1第二行地址,解引用，第二行元素大小--16字节
+
+	//printf("%d\n", sizeof(&a[0]+1));
+	////&a[0]第一行地址，&a[0]+1第二行地址大小--8字节
+
+	//printf("%d\n", sizeof(*( & a[0] + 1)));
+	////&a[0]第一行地址，&a[0]+1第二行地址，解引用元素大小--16字节
+
+	//printf("%d\n", sizeof(*a));
+	////a首元素地址（第一行元素地址），解引用，元素大小--16字节
+
+	//printf("%d\n", sizeof(a[3]));
+	////a[3]与a[0]相同，根据类型算出大小，不会真实访问/*---16字节
+
+
+
+	//int a[5] = { 1,2,3,4,5 };//&a--整个数组地址
+	//int* ptr = (int*)(&a + 1);//&a+1--跳过一个数组，取出的类型是数组指针，要强制类型转换
+	//printf("%d,%d", *(a + 1), *(ptr - 1));
+
+
+	printf("%p\n", p + 0x1);//加了20个字节--0x100014
+	printf("%p\n", (unsigned long)p + 0x1);//转换类型后+1--0x100001
+	printf("%p\n", (unsigned int*)p + 0x1);//转换类型后+4--0x100004
+	//结构体指针+1跳过20；
+	//整形指针+1跳过4
+	
 	return 0;
 }
+struct test
+{
+	int num;
+	char* pcname;
+	short sdate;
+	char cha[2];
+	short sba[4];
+}* p;//结构体指针变量p

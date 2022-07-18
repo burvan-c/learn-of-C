@@ -1,9 +1,2 @@
 ﻿  test40.c
-D:\vs pratice C\learn-of-C\train17\train17\test40.c(126,19): error C2065: “p”: 未声明的标识符
-D:\vs pratice C\learn-of-C\train17\train17\test40.c(126,9): warning C4477: “printf”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“int”
-D:\vs pratice C\learn-of-C\train17\train17\test40.c(126,9): warning C4313: "printf": 格式字符串中的 "%p" 与类型为 "int" 的参数 1 冲突
-D:\vs pratice C\learn-of-C\train17\train17\test40.c(127,34): error C2065: “p”: 未声明的标识符
-D:\vs pratice C\learn-of-C\train17\train17\test40.c(127,9): warning C4477: “printf”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“unsigned long”
-D:\vs pratice C\learn-of-C\train17\train17\test40.c(127,9): warning C4313: "printf": 格式字符串中的 "%p" 与类型为 "unsigned long" 的参数 1 冲突
-D:\vs pratice C\learn-of-C\train17\train17\test40.c(128,34): error C2065: “p”: 未声明的标识符
-D:\vs pratice C\learn-of-C\train17\train17\test40.c(128,34): warning C4312: “类型强制转换”: 从“int”转换到更大的“unsigned int *”
+  train17.vcxproj -> D:\vs pratice C\learn-of-C\train17\x64\Debug\train17.exe

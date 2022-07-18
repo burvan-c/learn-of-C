@@ -1,7 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-int main()
-{
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
+//int main()
+//{
 	//int a[] = { 1,2,3,4 };//整形变量4个字节
 	//printf("%d\n", sizeof(a));//sizeof(数组名）--整个数组的大小
 	//printf("%d\n", sizeof(a+0));//a+0:第一个元素地址，x64为8个字节
@@ -123,19 +123,63 @@ int main()
 	//printf("%d,%d", *(a + 1), *(ptr - 1));
 
 
-	printf("%p\n", p + 0x1);//加了20个字节--0x100014
-	printf("%p\n", (unsigned long)p + 0x1);//转换类型后+1--0x100001
-	printf("%p\n", (unsigned int*)p + 0x1);//转换类型后+4--0x100004
-	//结构体指针+1跳过20；
-	//整形指针+1跳过4
+	//printf("%p\n", p + 0x1);//加了20个字节--0x100014
+	//printf("%p\n", (unsigned long)p + 0x1);//转换类型后+1--0x100001
+	//printf("%p\n", (unsigned int*)p + 0x1);//转换类型后+4--0x100004
+	////结构体指针+1跳过20；
+	////整形指针+1跳过4
+
+
+	//int a[4] = { 1,2,3,4 };
+	//int* ptr1 = (int*)(&a + 1);//&a+1--跳过数组
+	//int* ptr2 = (int*)((int)a + 1);//一个字节给一个地址
+	//printf("%x,%x", ptr1[-1], *ptr2);
+
+	//int a[3][2] = { (0,1),(2,3),(4,5) };//小括号是逗号表达式1，3，5--1 3，5 0，0 0
+	//int* p;
+	//p = a[0];//a[0]未放在&和sizeof中，所以表示第一个元素地址*****************************
+	//printf("%d", p[0]);//p[0]<==>a[0][0]<==>*(p+0)
+
 	
-	return 0;
-}
-struct test
-{
-	int num;
-	char* pcname;
-	short sdate;
-	char cha[2];
-	short sba[4];
-}* p;//结构体指针变量p
+	//int a[5][5];
+	//int(*p)[4];
+	//p = a;
+	//printf("%p,%d\n", &p[4][2] - &a[4][2], &p[4][2] - &a[4][2]);
+	////p[4][2]<==>*(*(p+4)+2)  %p--16进制反码   %d--有符号整形
+
+
+	//int aa[2][5] = { 1,2,3,4,5,6,7,8,9,10 };
+	//int* ptr1 = (int*)(&aa + 1);//&aa--取整个数组的地址
+	//int* ptr2 = (int*)(*(aa + 1));//aa--首元素地址，+1--第二行地址
+	//printf("%d,%d", *(ptr1 - 1), *(ptr2 - 1));
+	////ptr1为整形指针，-1向左移动一个整形位
+
+
+	//char* a[] = { "work","at","alibaba" };//'\0'
+	//char** pa = a;
+	//pa++;//pa为指针，指向a
+	//printf("%s\n", *pa);//pa是地址，*pa解引用访问元素
+
+
+
+	//数据结构：画图分析char*  char**   char***
+//	char* c[] = { "enter","new","point","first" };
+//	char** cp[] = { c + 3,c + 2,c + 1,c };
+//	char*** cpp = cp;
+//	printf("%s\n", **++cpp);//cpp为地址，解引用后访问元素    c+2
+//	printf("%s\n", *--* ++cpp + 3);
+//	//上一行已经自加一次  c+1  ++  *  --  *  +3
+//	printf("%s\n", *cpp[-2] + 3);
+//	//**(cpp-2)+3,从c+1开始向后移动两个char***位，在c+3位置
+//	printf("%s\n", cpp[-1][-1] + 1);
+//	//cpp从c+1开始，*（*(cpp-1)-1)
+//	return 0;
+//}
+//struct test
+//{
+//	int num;
+//	char* pcname;
+//	short sdate;
+//	char cha[2];
+//	short sba[4];
+//}* p;//结构体指针变量p

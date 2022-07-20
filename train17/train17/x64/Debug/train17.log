@@ -1,3 +1,2 @@
-﻿  test41.c
-D:\vs pratice C\learn-of-C\train17\train17\test41.c(207,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+﻿  test42.c
   train17.vcxproj -> D:\vs pratice C\learn-of-C\train17\x64\Debug\train17.exe

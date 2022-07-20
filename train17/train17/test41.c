@@ -1,7 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-#include<assert.h>
-#include<string.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
+//#include<assert.h>
+//#include<string.h>
 
 
 //动态内存开辟
@@ -162,44 +162,67 @@
 
 
 
+
+
+
+
 //编程判断一个字符串是否是旋转后得到
-int is_string_rotate(char* str1, char* str2)
-{
-	int i = 0;
-	int n = strlen(str1);
-	for (i = 0; i < n; i++)
-	{
-		//每次旋转一个字符
-		char tmp = *str1;
-		//后面n-1字符前移
-		int j = 0;
-		for (j = 0; j < n - 1; j++)
-		{
-			*(str1 + j) = *(str1 + j + 1);
-		}
-		//tmp放最后
-		*(str1 + n - 1) = tmp;
-		if (strcmp(str1, str2) == 0)
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
+//int is_string_rotate(char* str1, char* str2)
+//{
+//	int i = 0;
+//	int n = strlen(str1);
+//	for (i = 0; i < n; i++)
+//	{
+//		//每次旋转一个字符
+//		char tmp = *str1;
+//		//后面n-1字符前移
+//		int j = 0;
+//		for (j = 0; j < n - 1; j++)
+//		{
+//			*(str1 + j) = *(str1 + j + 1);
+//		}
+//		//tmp放最后
+//		*(str1 + n - 1) = tmp;
+//		if (strcmp(str1, str2) == 0)
+//		{
+//			return 1;
+//		}
+//	}
+//	return 0;
+//}
 
-
-int main()
-{
-	char arr1[] = "aabcd";
-	char arr2[] = "bcdaa";
-	int ret = is_string_rotate(arr1, arr2);
-	if (ret == 1)
-	{
-		printf("yes\n");
-	}
-	else
-	{
-		printf("no\n");
-	}
-	return 0;
-}
+//int is_string_rotate(char* str1, char* str2)
+//{
+//	//长度不相等，肯定不是旋转得到
+//	if (strlen(str1) != strlen(str2))
+//	{
+//		return 0;
+//	}
+//
+//
+//	//str1后面加一个str1
+//	// strcat(“”，“”)追加字符,不可加自己->strncat()可以加自己，多个参数
+//	//判断str2是否为str1的子串--strstr()
+//
+//	int len = strlen(str1);
+//	strncat(str1, str1, len);
+//
+//	char* ret = strstr(str1, str2);
+//	return ret != NULL;
+//}
+//
+//int main()
+//{
+//	char arr1[] = "AAbcd";
+//	char arr2[] = "bcdAA";
+//	int ret = is_string_rotate(arr1, arr2);
+//	if (ret == 1)
+//	{
+//		printf("yes\n");
+//	}
+//	else
+//	{
+//		printf("no\n");
+//	}
+//	return 0;
+//}

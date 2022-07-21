@@ -13,6 +13,11 @@
 
 //内存操作函数--memcpy   memmove   memset    memcmp
 
+
+
+
+//strlen
+
 //int my_strlen(char* str)
 //{
 //	int count = 0;//计算器
@@ -36,8 +41,6 @@
 //}
 
 
-
-
 //int main()
 //{
 //	if (strlen("abc") - strlen("abcdef") > 0)
@@ -53,6 +56,7 @@
 //}
 
 
+//strcpy
 
 //int main()
 //{
@@ -72,6 +76,9 @@
 
 
 
+
+//字符串追加
+
 //int main()
 //{
 //	char arr1[20] = "hello ";//识别‘\0’,从‘\0'开始
@@ -80,7 +87,6 @@
 //	printf("%s\n", arr1);
 //	return 0;
 //}
-
 
 
 //char* my_strcat(char* dest, const char* src)
@@ -110,6 +116,57 @@
 //	return 0;
 //}
 
+
+
+
+
+//字符串比较大小--从前向后比较字母的ASCII值大小
+
+//int main()
+//{
+//	int ret = strcmp("abbbc", "abc");//ASCII值b<c,所以返回值为-1
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
+int my_strcmp(char* s1, char* s2)
+{
+	assert(s1 && s2);
+	while (*s1 == *s2)
+	{
+		if (*s1 == '\0')
+		{
+			return 0;
+		}
+		s1++;
+		s2++;
+
+	}
+	return *s1 - *s2;
+}
+
+int main()
+{
+	char* p = "abcdef";
+	char* q = "abbbbb";
+	int ret = my_strcmp(p, q);
+
+	if (ret > 0)
+	{
+		printf("p>q\n");
+	}
+	else if (ret < 0)
+	{
+		printf("p<q\n");
+
+	}
+	else
+	{
+		printf("p==q\n");
+	}
+	return 0;
+}
 
 
 

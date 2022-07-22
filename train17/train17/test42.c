@@ -1,8 +1,9 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-#include<string.h>
-#include<assert.h>
-#include<errno.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
+//#include<string.h>
+//#include<assert.h>
+//#include<errno.h>
+//#include<ctype.h>
 
 //字符串+内存操作函数
 //字符串长度函数--strlen
@@ -296,6 +297,7 @@
 
 
 //strerror--返回错误码对应的错误信息  char* strerror(int errnum);
+//perror--把错误码转化为错误信息，打印错误信息
 
 //int main()
 //{
@@ -308,15 +310,143 @@
 //
 //
 //	FILE* pf = fopen("test.txt", "r");
+//  //打开文件失败会返回NULL
 //	if (pf == NULL)
 //	{
-//		printf("%s\n", strerror(errno));
+//		//printf("%s\n", strerror(errno));
+//		perror("fopen");
 //		return 1;
 //	}
+//  //读文件
+//  //关闭文件
 //	fclose(pf);
 //	pf = NULL;
 //	return 0;
 //}
 
 
+//字符分类函数--多个，查表
+
+//int main()
+//{
+//	char ch = '2';
+//
+//	//int ret = isdigit(ch);
+//	//isdigit 数字字符返回非0值，不是数字字符返回0
+//
+//	int ret = islower(ch);
+//	//islower 小写字符非0值，不是小写字符返回0
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
+//字符转换函数--tolower   toupper
+
+//int main()
+//{
+//	char arr[20] = { 0 };
+//	scanf("%s", arr);
+//	int i = 0;
+//	while (arr[i] != '\0')
+//	{
+//		if (isupper(arr[i]));
+//		{
+//			arr[i] = tolower(arr[i]);//返回小写字符
+//			printf("%c ", arr[i]);
+//		}
+//		i++;
+//	}
+//	return 0;
+//}
+
+
+//内存函数--memcpy  memmove  memcmp   memset
+
+//memcpy
+
+//void* my_memcpy(void* dest, const void* src, size_t num)
+//    //void*--不可以直接解引用（不确定几个字节）
+//{
+//	void* ret = dest;
+//	assert(dest && src);
+//	while (num--)
+//	{
+//		*(char*)dest = *(char*)src;//强制类型转换是一种临时的状态
+//		dest = (char*)dest + 1;
+//		src = (char*)src + 1;
+//	}
+//	return ret;
+//}
+//int main()
+//{
+//	int arr1[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int arr2[20] = { 0 };
+//	my_memcpy(arr2, arr1, 20);//20表示字节
+//	//memcpy函数应该拷贝不重叠的内存
+//	//memmove函数可以处理内存重叠情况
+//	return 0;
+//}
+
+
+//memmove
+
+//void* my_memmove(void* dest, const void* src, size_t num)
+//{
+//	void* ret = dest;
+//	assert(dest && src);
+//
+//	if (dest < src)
+//	{
+//		//从前向后拷贝
+//		while (num--)
+//		{
+//			*(char*)dest = *(char*)src;//char类型一个字节
+//			dest = (char*)dest + 1;
+//			src = (char*)src + 1;
+//		}
+//	}
+//	else
+//	{
+//		//从后向前拷贝
+//		while (num--)
+//		{
+//			*((char*)dest + num) = *((char*)src + num);
+//
+//		}
+//		return ret;
+//	}
+//}
+//int main()
+//{
+//	int arr1[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	//memcpy(arr1+2, arr1, 20);//20表示字节
+//	//memcpy函数应该拷贝不重叠的内存
+//	//memmove函数可以处理内存重叠情况
+//	my_memmove(arr1 + 2, arr1, 20);
+//	return 0;
+//}
+
+
+//memcmp
+
+//int main()
+//{
+//	float arr1[] = { 1.0,2.0,3.0,4.0 };//float占4个字节
+//	float arr2[] = { 1.0,3.0 };
+//	int ret = memcmp(arr1, arr2, 4);//4个字节
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
+//memset--内存设置函数
+
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	memset(arr, 1, 20);//把arr数组前20个字节设置成1
+//	//以字节为单位设置内存
+//	return 0;
+//}
 

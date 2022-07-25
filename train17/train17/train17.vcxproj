@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="contact.c" />
     <ClCompile Include="test29.c" />
     <ClCompile Include="test30.c" />
     <ClCompile Include="test31.c" />
@@ -154,6 +155,10 @@
     <ClCompile Include="test41.c" />
     <ClCompile Include="test42.c" />
     <ClCompile Include="test43.c" />
+    <ClCompile Include="test44.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="contact.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

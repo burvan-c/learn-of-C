@@ -1,4 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<string.h>
+
+
 
 #define max_name 20
 #define max_tele 12
@@ -28,3 +32,6 @@ void initcontact(contact* pc);
 
 //增加联系人
 void addcontact(contact* pc);
+
+//打印联系人信息
+void printcontact(const contact* pc);

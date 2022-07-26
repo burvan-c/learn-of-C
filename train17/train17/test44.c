@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
+
 #include"contact.h"
 
 //联合体(共用体)---成员共用同一块空间
@@ -125,6 +125,7 @@ int main()
 		case SORT:
 			break;
 		case PRINT:
+			printcontact(&con);
 			break;
 		case EXIT:
 			break;

@@ -39,4 +39,58 @@
 
 
 //calloc
-//void* calloc(size_t num, size_t size);
+
+//void* calloc(size_t num, size_t size);--num元素个数；size每个元素字节长度
+//内存初始化为0
+//int main()
+//{
+//	//int* p = (int*)malloc(40);//10个随机值
+//	int* p = calloc(10, sizeof(int));//10个0
+//	if (p == NULL)
+//		return 1;
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d\n", *(p + i));
+//	}
+//	free(p);
+//	p = NULL;
+//	return 0;
+//}
+
+
+
+//realloc
+
+//void* realloc (void* ptr, size_t size);--对动态开辟内存的大小做调整
+//ptr--要调整的内存地址
+//size--调整之后大小
+//返回值为调整后内存的起始位置
+
+int main()
+{
+	//int* p = (int*)malloc(40);//10个随机值
+	int* p = calloc(10, sizeof(int));//10个0
+
+	if (p == NULL)
+	{
+		perror("main");
+		return 1;
+	}
+		
+	int i = 0;
+	for (i = 0; i < 10; i++)
+	{
+		*(p + i) = 5;
+	}
+
+	int* ptr = realloc(p, 20 * sizeof(int));
+	if (ptr != NULL)
+	{
+		p = ptr;
+	}
+
+	free(p);
+	p = NULL;
+	return 0;
+}

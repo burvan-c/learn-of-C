@@ -69,10 +69,21 @@
     <ClCompile Include="test45.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="test46.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test47.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="contact.h">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test.dat">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

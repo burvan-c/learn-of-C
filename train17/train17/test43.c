@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
 
 //自定义类型：结构体   枚举    联合
 //结构是成员变量的集合，成员变量可为不同类型

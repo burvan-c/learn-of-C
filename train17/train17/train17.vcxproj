@@ -160,6 +160,7 @@
     <ClCompile Include="test46.c" />
     <ClCompile Include="test47.c" />
     <ClCompile Include="test48.c" />
+    <ClCompile Include="test49.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="contact.h" />

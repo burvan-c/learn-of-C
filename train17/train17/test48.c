@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
 
 
 //程序环境、预处理
@@ -107,3 +107,57 @@
 
 //条件编译
 
+//#define PRINT
+//int main()
+//{
+////#ifdef PRINT     //#if defined(PRINT) 也可以
+////	printf("666\n");
+////#endif
+//
+//#if -1                               //非0为真
+//	printf("666\n");
+//#endif
+//
+//#if 0
+//	printf("666\n");
+//#endif
+//	return 0;
+//}
+
+
+
+//多分支条件编译
+
+//#if 常量表达式
+//      //......
+//#elif 常量表达式
+//      //......
+//#else
+//      //......
+//#endif
+
+//#define sdf
+//int main()
+//{
+//#if 1==1
+//    printf("666\n");
+//#elif 2==2
+//    printf("777\n");
+//#else
+//    printf("888\n");
+//#endif
+//
+//    //不参与定义时会编译;  参与定义后就不编译了
+//#ifndef sdf         //#if !defined(sdf)  也可以
+//    printf("666\n");
+//#endif
+//    return 0;
+//}
+
+
+
+
+//文件包含
+//库文件包含         #include<stdio.h>
+//本地文件包含       #include"add.h"
+//嵌套文件包含       #pragma once--使头文件只包含一次

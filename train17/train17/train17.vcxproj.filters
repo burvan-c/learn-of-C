@@ -78,6 +78,9 @@
     <ClCompile Include="test48.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="test49.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="contact.h">
